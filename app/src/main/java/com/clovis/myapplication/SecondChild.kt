@@ -20,6 +20,7 @@ interface Walkable {
     fun onWalk(): String
 }
 
+
 interface Eatable {
 
     fun onEat(): String
