@@ -1,8 +1,10 @@
 package com.clovis.myapplication
 
-open class Child : Parent(), Walkable, Eatable {
+open class Child : Parent(), Walkable, Eatable
+  {
+     var name ="My name"
 
-    override fun onEat(): String {
+     override fun onEat(): String {
         return " Child is eating"
     }
 
@@ -10,9 +12,12 @@ open class Child : Parent(), Walkable, Eatable {
         return "Child is walking"
     }
 
-    override fun speak() : String {
-        return "Speak from child"
-    }
+      override fun speak(): String {
+          return "Speak from child"
+      }
+//    override fun speak() : String {
+//        return "Speak from child"
+//    }
 
     fun singSong(voice: String = "Tenor", music: String = "None", singerName: String) : String {
 
